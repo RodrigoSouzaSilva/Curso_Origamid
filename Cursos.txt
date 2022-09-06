@@ -1,0 +1,4 @@
+1 - UI Design para Iniciantes
+Neste curso você irá aprender sobre Design de Interface de Usuário (UI Design), o curso foi criado para quem não sabe nada sobre o assunto. Ele aborda desde o início até assuntos mais avançados como sistemas de design.
+
+Figma será utilizado para a construção dos protótipos. Você irá aprender a criar 2 sites totalmente do zero, sendo o primeiro um portfólio pessoal e o segundo o site Bikcraft, um site fictício de uma empresa de bicicletas.
