@@ -1,4 +1,9 @@
-1 - UI Design para Iniciantes
+01 - UI Design para Iniciantes
 Neste curso você irá aprender sobre Design de Interface de Usuário (UI Design), o curso foi criado para quem não sabe nada sobre o assunto. Ele aborda desde o início até assuntos mais avançados como sistemas de design.
 
 Figma será utilizado para a construção dos protótipos. Você irá aprender a criar 2 sites totalmente do zero, sendo o primeiro um portfólio pessoal e o segundo o site Bikcraft, um site fictício de uma empresa de bicicletas.
+
+02 - HTML e CSS para Iniciantes
+Este curso é para quem deseja entrar ou já está no mercado e desenvolvimento Front End/criação de sites. Se você está iniciando, terá a oportunidade de aprender do zero e para os que já trabalham com web design/front end é uma boa oportunidade para se atualizar/aprender uma abordagem diferente.
+
+Eu foco na teoria + prática, assim você aprende os fundamentos por trás de cada decisão de código. E após isso você implementa em um projeto real — bikcraft.com. Você já sai do curso com um primeiro site profissional construído. Nele eu uso CSS Flexbox e Grid Layout para construir os projetos responsivos e totalmente do zero, sem usar nada pronto.
