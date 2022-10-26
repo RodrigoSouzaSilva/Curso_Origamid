@@ -1,0 +1,37 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Result</title>
+    
+    
+    <main><p id="texto" class="ativo" aria-label="Cursos" style="background-color: black; padding: 1rem; height: 300px;">Curso de <span>JavaScript</span></p>
+</main><style>body {
+  font-size: 2rem;
+}
+
+.ativo {
+  color: white;
+}
+</style><script>{
+        const texto = document.querySelector('#texto');
+
+console.log(texto);
+console.dir(texto);
+
+// Puxar informação
+console.log(texto.innerHTML);
+console.log(texto.innerText);
+console.log(texto.clientHeight);
+console.log(texto.clientWidth);
+
+// Definir informação
+texto.style.backgroundColor = 'black';
+texto.style.padding = '1rem';
+texto.style.height = document.body.clientHeight / 2 + 'px';
+
+texto.classList.add('ativo');
+texto.setAttribute('aria-label', 'Cursos');
+
+      }</script></body></html>
