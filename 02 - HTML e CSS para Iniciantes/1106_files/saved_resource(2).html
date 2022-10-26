@@ -1,0 +1,30 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Result</title>
+    
+    
+    <script>{
+        const ativar = document.querySelector('.ativar');
+
+/** @param {MouseEvent} event */
+function ativarAoClick(event) {
+  console.log(event);
+
+  const elemento = event.currentTarget;
+  const posicaoMouse = {
+    x: event.x,
+    y: event.y,
+  };
+  const tempoPassado = event.timeStamp;
+
+  console.log(elemento);
+  console.log(posicaoMouse);
+  console.log(tempoPassado);
+}
+
+ativar.addEventListener('click', ativarAoClick);
+
+      }</script></body></html>

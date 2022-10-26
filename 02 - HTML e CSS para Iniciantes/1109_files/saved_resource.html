@@ -1,0 +1,52 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Result</title>
+    
+    
+    <main><div id="galeria">
+  <ul>
+    <li><img src="https://www.origamid.com/slide/html-e-css-para-iniciantes/img/img1.jpg" alt="Bicicleta 1"></li>
+    <li><img src="https://www.origamid.com/slide/html-e-css-para-iniciantes/img/img2.jpg" alt="Bicicleta 2"></li>
+    <li><img src="https://www.origamid.com/slide/html-e-css-para-iniciantes/img/img3.jpg" alt="Bicicleta 3"></li>
+  </ul>
+  <img id="imagem-principal" src="https://www.origamid.com/slide/html-e-css-para-iniciantes/img/img1.jpg" alt="Bicicleta 1">
+</div>
+</main><style>img {
+  max-width: 100%;
+  display: block;
+}
+
+#galeria {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#galeria ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+</style><script>{
+        const imagens = document.querySelectorAll('#galeria li img');
+
+function galeriaTrocar(event) {
+  const principal = document.querySelector('#imagem-principal');
+  const clicada = event.currentTarget;
+  principal.src = clicada.src;
+  principal.setAttribute('alt', clicada.getAttribute('alt'));
+}
+
+function galeriaClique(imagem) {
+  imagem.addEventListener('click', galeriaTrocar);
+}
+
+imagens.forEach(galeriaClique);
+
+      }</script></body></html>

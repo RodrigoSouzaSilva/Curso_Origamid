@@ -1,0 +1,29 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Result</title>
+    
+    
+    <main><h1>Curso de JavaScript</h1>
+<button class="botao">Mais Informações</button>
+<p class="texto">O curso de JavaScript é um curso completo com 40 horas.</p>
+</main><style>.texto {
+  display: none;
+}
+
+.texto.ativo {
+  display: block;
+}
+</style><script>{
+        const botao = document.querySelector('.botao');
+
+function mostrar() {
+  const texto = document.querySelector('.texto');
+  texto.classList.toggle('ativo');
+}
+
+botao.addEventListener('click', mostrar);
+
+      }</script></body></html>
