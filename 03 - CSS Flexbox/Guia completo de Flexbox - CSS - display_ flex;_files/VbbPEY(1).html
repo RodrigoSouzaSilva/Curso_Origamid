@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/origamid/fullembedgrid/VbbPEY?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - order</title>
+  
+  
+  
+  
+<style>
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.item {
+	margin: 5px;
+	padding: 0 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <h1>order: misturados;</h1>
+<section class="container">
+	<div class="item order2">1</div>
+	<div class="item order4">2</div>
+	<div class="item order1">3</div>
+	<div class="item order3">4</div>
+</section>
+
+<h1>order: negativo; / flex-grow</h1>
+<section class="container">
+	<div class="item order2 flex-grow">1</div>
+	<div class="item order-1 flex-grow">2</div>
+	<div class="item order1 flex-grow">3</div>
+	<div class="item order3 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais; / grow / column</h1>
+<section class="container column">
+	<div class="item order2 flex-grow">1</div>
+	<div class="item order2 flex-grow">2</div>
+	<div class="item order1 flex-grow">3</div>
+	<div class="item order1 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais; / grow / column</h1>
+<section class="container column">
+	<div class="item flex-grow">1</div>
+	<div class="item order2 flex-grow">2</div>
+	<div class="item flex-grow">3</div>
+	<div class="item order-1 flex-grow">4</div>
+</section>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js.download"></script>
+
+
+
+ 
+</body></html>

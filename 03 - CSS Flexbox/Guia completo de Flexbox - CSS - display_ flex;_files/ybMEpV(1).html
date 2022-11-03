@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/origamid/fullembedgrid/ybMEpV?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - flex-grow</title>
+  
+  
+  
+  
+<style>
+/* Os itens não se expandem para ocupar o container. */
+.grow0 {
+	flex-grow: 0;
+}
+
+/* Os itens se expandem igualmente para ocupar o container. Utilizando apenas o flex-grow, o crescimento é distribuído igualmente antes e depois do conteúdo de cada elemento. (pois por padrão o flex-basis é auto) */
+.grow1 {
+	flex-grow: 1;
+}
+
+/* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; */
+.grow2 {
+	flex-grow: 2;
+}
+
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <h1>flex-grow: 0;</h1>
+<section class="container">
+	<div class="item grow0">1</div>
+	<div class="item grow0">2</div>
+	<div class="item grow0">3</div>
+</section>
+
+<h1>flex-grow: 1;</h1>
+<section class="container">
+	<div class="item grow1">1</div>
+	<div class="item grow1">2</div>
+	<div class="item grow1">3</div>
+</section>
+
+<h1>flex-grow: 2;</h1>
+<section class="container column">
+	<div class="item grow2">1</div>
+	<div class="item grow2">2</div>
+	<div class="item grow2">3</div>
+</section>
+
+<h1>flex-grow: 1; // conteúdo largo</h1>
+<section class="container column-reverse">
+	<div class="item grow1">1</div>
+	<div class="item grow1">TestandoTestando2</div>
+	<div class="item grow1">3</div>
+</section>
+
+<h1>flex-grow: (misturado);</h1>
+<section class="container column-reverse">
+	<div class="item grow0">1</div>
+	<div class="item grow1">2</div>
+	<div class="item grow2">3</div>
+</section>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js.download"></script>
+
+
+
+ 
+</body></html>
