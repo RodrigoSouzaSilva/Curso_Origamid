@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/origamid/fullembedgrid/gRKpow?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - grid-template-rows</title>
+  
+  
+  
+  
+<style>
+/* Grid */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid-template-rows-1 {
+	grid-template-rows: 50px 100px 50px 150px;
+}
+
+.grid-template-rows-2 {
+	grid-template-rows: 100px 100px;
+}
+
+.grid-template-rows-3 {
+	grid-template-rows: 1fr 2fr 1fr 3fr;
+}
+
+.grid-template-rows-4 {
+	grid-template-columns: 100px auto 50px;
+	grid-template-rows: 50px 200px auto;
+}
+
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	padding-bottom: 60px;
+	margin: 0px;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div>
+<h1>grid-template-rows: 50px 100px 50px 150px;</h1>
+<section class="grid grid-template-rows-1">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+</section>
+</div>
+
+<div>
+<h1>grid-template-rows: 100px 100px;</h1>
+<section class="grid grid-template-rows-2">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+</section>
+</div>
+
+<div>
+<h1>grid-template-rows: 1fr 2fr 1fr 3fr;</h1>
+<section class="grid grid-template-rows-3">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+</section>
+</div>
+
+<div>
+<h1>grid-template-columns / grid-template-rows</h1>
+<section class="grid grid-template-rows-4">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+</section>
+</div>
+
+<div>
+<h1>grid-template-columns / grid-template-rows</h1>
+<img src="./grid-template-columns.png" alt="">
+</div>
+  
+  
+  
+  
+
+  <script src="./iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js.download"></script>
+
+
+
+ 
+</body></html>
